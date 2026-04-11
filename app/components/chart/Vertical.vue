@@ -38,9 +38,12 @@ const yFormatter = (tick: number) => tick.toString()
     :class="showTitle ? 'p-6' : ''"
   >
     <div class="flex items-center justify-between">
-      <h3 class="text-lg font-semibold">
-        Bling Last Year
-      </h3>
+        <div>
+            <h3 class="text-lg font-semibold">
+              Bling Last Year
+            </h3>
+            <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
       <NuxtLink to="/blocks/bar-charts">
         <UButton
           icon="i-lucide-copy"
