@@ -4,3 +4,11 @@
 @theme {
   --ui-bg: var(--color-neutral-900);
 }
+
+:root {
+  --ui-primary: white;
+}
+
+.dark {
+  --ui-primary: white;
+}

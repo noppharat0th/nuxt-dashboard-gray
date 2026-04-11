@@ -24,7 +24,7 @@ const RevenueData = [
 const RevenueCategories = computed(() => ({
   desktop: {
     name: 'Desktop',
-    color: '#22c55e'
+    color: '#ffffff'
   }
 }))
 
@@ -39,7 +39,7 @@ const yFormatter = (tick: number) => tick.toString()
   >
     <div class="flex items-center justify-between">
       <h3 class="text-lg font-semibold">
-        Bar Chart
+        Bling Last Year
       </h3>
       <NuxtLink to="/blocks/bar-charts">
         <UButton
