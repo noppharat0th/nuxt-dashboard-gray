@@ -8,7 +8,7 @@ const colorMode = useColorMode()
 
 const teams = ref([
     {
-        label: 'Nuxt',
+        label: 'Nuxt Dashboard',
         avatar: {
             src: 'https://github.com/nuxt.png',
             alt: 'Nuxt'
