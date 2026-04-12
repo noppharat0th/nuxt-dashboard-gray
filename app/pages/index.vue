@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-4 mb-3 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-3 gap-5">
         <Card v-for="i in 4">
             <div class="flex justify-between items-center">
                 <span class="text-gray-400">Active User</span>
@@ -11,7 +11,7 @@
             </div>
         </Card>
     </div>
-    <div class="grid grid-cols-2 gap-5">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <Card>
             <MultiLines/>
         </Card>

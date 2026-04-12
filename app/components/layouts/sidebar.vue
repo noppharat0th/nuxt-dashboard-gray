@@ -2,7 +2,7 @@
 import type { DropdownMenuItem, NavigationMenuItem, SidebarProps } from '@nuxt/ui'
 defineProps<Pick<SidebarProps, 'variant' | 'collapsible' | 'side'>>()
 
-const open = ref(true)
+const open = useState('sidebar', () => true)
 
 const colorMode = useColorMode()
 
@@ -10,24 +10,10 @@ const teams = ref([
     {
         label: 'Nuxt Dashboard',
         avatar: {
-            src: 'https://github.com/nuxt.png',
-            alt: 'Nuxt'
+            src: '/Symbol.svg',
+            alt: 'Logo'
         }
     },
-    {
-        label: 'Vue',
-        avatar: {
-            src: 'https://github.com/vuejs.png',
-            alt: 'Vue'
-        }
-    },
-    {
-        label: 'UnJS',
-        avatar: {
-            src: 'https://github.com/unjs.png',
-            alt: 'UnJS'
-        }
-    }
 ])
 const selectedTeam = ref(teams.value[0])
 
@@ -52,9 +38,9 @@ const teamsItems = computed<DropdownMenuItem[][]>(() => {
 function getItems(state: 'collapsed' | 'expanded') {
     return [
         {
-            label: 'Inbox',
+            label: 'Dashboard',
             icon: 'i-lucide-inbox',
-            badge: '4'
+            active: true
         },
         {
             label: 'Issues',
@@ -110,7 +96,7 @@ defineShortcuts(extractShortcuts(teamsItems.value))
 
 <template>
     <div class="flex flex-1">
-        <USidebar v-model:open="open" variant="inset" collapsible="icon" rail :ui="{
+        <USidebar v-model:open="open" variant="inset" collapsible="offcanvas" class="flex-shrink-0" :ui="{
             container: 'h-full',
             inner: 'divide-transparent',
             body: 'py-0'
@@ -127,7 +113,7 @@ defineShortcuts(extractShortcuts(teamsItems.value))
 
             <template #default="{ state }">
                 <UNavigationMenu :key="state" :items="getItems(state)" orientation="vertical"
-                    :ui="{ link: 'p-1.5 overflow-hidden' }" />
+                    :ui="{ link: 'p-2 overflow-hidden  mb-1', }" />
             </template>
 
             <template #footer>

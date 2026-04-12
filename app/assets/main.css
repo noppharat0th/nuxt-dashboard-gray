@@ -1,14 +1,20 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme {
-  --ui-bg: var(--color-neutral-900);
-}
-
 :root {
-  --ui-primary: white;
+  --ui-primary: var(--color-neutral-900);
+  --ui-bg: var(--color-white);
+  --ui-border: var(--color-neutral-200);
 }
 
 .dark {
-  --ui-primary: white;
+  --ui-primary: var(--color-white);
+  --ui-bg: var(--color-neutral-900);
+  --ui-border: var(--color-neutral-800);
+}
+
+@theme {
+  --ui-primary: var(--ui-primary);
+  --ui-bg: var(--ui-bg);
+  --ui-border: var(--ui-border);
 }
