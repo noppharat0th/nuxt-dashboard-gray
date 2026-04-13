@@ -50,7 +50,7 @@ const xFormatter = (tick: number): string => {
         <div class="flex items-center justify-between">
             <div>
                 <h3 class="text-lg font-semibold">
-                    Bling Last Year
+                    Latest number of online users
                 </h3>
                 <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
@@ -66,6 +66,6 @@ const xFormatter = (tick: number): string => {
 
 <style>
 :root {
-  --vis-axis-grid-color: rgba(231, 231, 231, 0.05) !important; 
+    --vis-axis-grid-color: rgba(231, 231, 231, 0.05) !important;
 }
 </style>

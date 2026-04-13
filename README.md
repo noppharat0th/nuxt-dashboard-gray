@@ -1,6 +1,12 @@
-# Nuxt Minimal Starter
+# Teamplate Gray Dashboard - Nuxt
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Nuxtjs](https://img.shields.io/badge/Nuxt_4-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82)
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![TypeScript](https://img.shields.io/badge/typescript-%23007acc.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+<img width="1920" height="1328" alt="screencapture-localhost-3000-2026-04-12-16_59_08" src="https://github.com/user-attachments/assets/23391619-6b75-4198-a700-9cdb9cb1010d" />
+
 
 ## Setup
 
@@ -37,39 +43,3 @@ yarn dev
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
